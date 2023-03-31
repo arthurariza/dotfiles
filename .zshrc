@@ -1,8 +1,13 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git bundler zsh-syntax-highlighting)
+ZSH_THEME="cloud"
+
+plugins=(git bundler zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+# Git stops working after every Big Sur update
+alias bigsur="xcode-select --install"
 
 # Aliases
 alias zshconfig="vim ~/.zshrc"
@@ -16,6 +21,8 @@ alias a="php artisan"
 alias m="php artisan migrate"
 alias q="php artisan queue:work"
 alias mfs="php artisan migrate:fresh --seed"
+alias testp="php artisan test --parallel"
+alias cda="composer dump-autoload"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export ERL_AFLAGS="-kernel shell_history enabled"
