@@ -30,6 +30,7 @@ alias m="bundle exec rails db:migrate"
 alias db="bundle exec rails db:"
 alias cache="bundle exec rails dev:cache" 
 alias c="bundle exec rails console"
+alias g="bundle exec rails g"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export ERL_AFLAGS="-kernel shell_history enabled"
