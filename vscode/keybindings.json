@@ -1,0 +1,254 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  // Toggle Font Size
+  {
+    "key": "cmd+k cmd+k",
+    "command": "toggle",
+    "when": "editorTextFocus && !terminalFocus",
+    "args": {
+      "id": "fontSize",
+      "value": [
+        {
+          "editor.fontSize": 16,
+          "editor.lineHeight": 1.6
+        },
+        {
+          "editor.fontSize": 14,
+          "editor.lineHeight": 1.6
+        },
+      ]
+    }
+  },
+  // Ruby
+  {
+    "key": "cmd+t",
+    "command": "extension.railsGoToSpec",
+    "when": "editorTextFocus && editorLangId == 'ruby'"
+  },
+  {
+    "key": "cmd+r",
+    "command": "extension.runLineOnRspec",
+    "when": "editorTextFocus && editorLangId == 'ruby'"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "extension.runOnLastSpec",
+    "when": "editorTextFocus && editorLangId == 'ruby'"
+  },
+  // Elixir
+  {
+    "key": "cmd+t",
+    "command": "extension.elixirJumpToTest",
+    "when": "editorTextFocus && editorLangId == 'elixir'"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "extension.elixirRunLastTestCommand",
+    "when": "editorTextFocus && editorLangId == 'elixir'"
+  },
+  {
+    "key": "cmd+r",
+    "command": "extension.elixirRunTestAtCursor",
+    "when": "editorTextFocus && editorLangId == 'elixir'"
+  },
+  // PHP
+  {
+    "key": "cmd+r",
+    "command": "better-pest.run",
+    "when": "editorTextFocus && editorLangId == 'php'"
+  },
+  {
+    "key": "cmd+e cmd+t",
+    "command": "better-pest.run-suite",
+    "when": "editorTextFocus && editorLangId == 'php'"
+  },
+  {
+    "command": "namespaceResolver.importAll",
+    "key": "cmd+i cmd+a",
+    "when": "editorTextFocus && editorLangId == 'php'"
+  },
+  {
+    "command": "namespaceResolver.sort",
+    "key": "cmd+i cmd+s",
+    "when": "editorLangId == 'php' && editorTextFocus"
+  },
+  {
+    "command": "namespaceResolver.highlightNotImported",
+    "key": "cmd+i cmd+h",
+    "when": "editorLangId == 'php' && editorTextFocus"
+  },
+  {
+    "command": "namespaceResolver.generateNamespace",
+    "key": "cmd+i cmd+g",
+    "when": "editorTextFocus && editorLangId == 'php'"
+  },
+  {
+    "key": "cmd+i cmd+e",
+    "command": "namespaceResolver.expand",
+    "when": "editorTextFocus && editorLangId == 'php'"
+  },
+  {
+    "key": "cmd+i cmd+i",
+    "command": "namespaceResolver.import",
+    "when": "editorTextFocus"
+  },
+  // Activity Bar
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+f",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "cmd+shift+x",
+    "command": "workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled"
+  },
+  {
+    "key": "cmd+shift+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+shift+i",
+    "command": "inlineChat.startWithCurrentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+shift+c",
+    "command": "workbench.action.chat.openInSidebar",
+    "when": "editorTextFocus"
+  },
+  // Navigation
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "cmd+y",
+    "command": "workbench.action.gotoSymbol",
+    "when": "!accessibilityHelpIsShown && !accessibleViewIsShown"
+  },
+  // Terminal
+  {
+    "key": "cmd+k",
+    // "key": "cmd+k cmd+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  // {
+  //   "key": "cmd+t",
+  //   "command": "workbench.action.terminal.toggleTerminal",
+  //   "when": "terminal.active"
+  // },
+  // Misc
+  {
+    "key": "cmd+l",
+    "command": "copy-relative-path-and-line-numbers.both",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  // Emmet
+  {
+    "key": "cmd+m cmd+o",
+    "command": "editor.emmet.action.balanceOut",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+i",
+    "command": "editor.emmet.action.balanceIn",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+u",
+    "command": "editor.emmet.action.updateTag",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+j",
+    "command": "editor.emmet.action.splitJoinTag",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+r",
+    "command": "editor.emmet.action.removeTag",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+m",
+    "command": "editor.emmet.action.mergeLines",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+p",
+    "command": "editor.emmet.action.matchTag",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+e",
+    "command": "editor.emmet.action.selectNextItem",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+m cmd+q",
+    "command": "editor.emmet.action.selectPrevItem",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "-workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "-workbench.action.terminal.focusNext",
+    "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+  }
+]

@@ -1,0 +1,216 @@
+{
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.parameterHints.enabled": false,
+  "editor.tabSize": 2,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "extensions.ignoreRecommendations": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "erb": "html.erb",
+    "javascript": "javascriptreact",
+    "phoenix-heex": "html"
+  },
+  "tailwindCSS.includeLanguages": {
+    "elixir": "html",
+    "phoenix-heex": "html"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.semanticHighlighting.enabled": true
+  },
+  "window.nativeTabs": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Menlo, 'Victor Mono', 'Operator Mono', 'Cascadia Code', 'Courier New', Monaco,  monospace",
+  "editor.fontSize": 16,
+  "emmet.showSuggestionsAsSnippets": true,
+  "[erb]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.minimap.enabled": false,
+  "files.insertFinalNewline": true,
+  "editor.renderWhitespace": "none",
+  "window.autoDetectHighContrast": false,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "emmet.triggerExpansionOnTab": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "rubyLsp.enableExperimentalFeatures": true,
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": true,
+    "definition": true,
+    "workspaceSymbol": true,
+    "signatureHelp": true,
+    "typeHierarchy": true
+  },
+  "sorbet.lspConfigs": [
+    {
+      "id": "stable",
+      "name": "Sorbet",
+      "description": "Stable Sorbet Ruby IDE features",
+      "cwd": "${workspaceFolder}",
+      "command": [
+        "bundle",
+        "exec",
+        "srb",
+        "typecheck",
+        "--lsp"
+      ]
+    },
+    {
+      "id": "beta",
+      "name": "Sorbet (Beta)",
+      "description": "Beta Sorbet Ruby IDE features",
+      "cwd": "${workspaceFolder}",
+      "command": [
+        "bundle",
+        "exec",
+        "srb",
+        "typecheck",
+        "--lsp",
+        "--enable-all-beta-lsp-features"
+      ]
+    },
+    {
+      "id": "experimental",
+      "name": "Sorbet (Experimental)",
+      "description": "Experimental Sorbet Ruby IDE features (warning: crashy, for developers only)",
+      "cwd": "${workspaceFolder}",
+      "command": [
+        "bundle",
+        "exec",
+        "srb",
+        "typecheck",
+        "--lsp",
+        "--enable-all-experimental-lsp-features"
+      ]
+    }
+  ],
+  "githubPullRequests.terminalLinksHandler": "github",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "elixir": false
+  },
+  "ruby.specCommand": "docker compose exec web bin/rspec",
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "terminal.external.osxExec": "Warp.app",
+  "files.autoSave": "onFocusChange",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "rubyLsp.rubyVersionManager": {
+    "identifier": "asdf"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "githubPullRequests.pullBranch": "never",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "update.showReleaseNotes": false,
+  "security.promptForLocalFileProtocolHandling": false,
+  "vscode-erb-beautify.keepBlankLines": 1,
+  "vscode-erb-beautify.tab": true,
+  "editor.renderControlCharacters": false,
+  // "vscode-run-rspec-file.custom-command": "rspec -fd",
+  "vscode-run-rspec-file.custom-command": "bin/rspec",
+  "vscode-elixir-test": {
+    "mixEnv": "test",
+    "focusOnTerminalAfterTest": true,
+    "beforeTest": "clear"
+  },
+  "vscode-erb-beautify.customEnvVar": {},
+  "files.associations": {
+    "*.heex": "phoenix-heex"
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+  },
+  "prettier.documentSelectors": [
+    "**/*.blade.php"
+  ],
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.lineHeight": 1.6,
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "breadcrumbs.enabled": false,
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.linters": [
+    "rubocop"
+  ],
+  "window.customTitleBarVisibility": "never",
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.formatOnSave": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "rubyLsp.bundleGemfile": "/Users/arthur/Dev/TP/gemfile/Gemfile",
+}
