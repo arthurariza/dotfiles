@@ -1,0 +1,32 @@
+import = [
+  "~/.config/alacritty/catppuccin-macchiato.toml"
+]
+
+[font]
+size = 15.0
+
+[font.bold]
+family = "Menlo"
+
+[font.italic]
+family = "Menlo"
+
+[font.normal]
+family = "Menlo"
+
+[font.offset]
+x = 0
+y = 0
+
+[window]
+decorations = "None"
+dynamic_padding = true
+resize_increments = true
+
+[window.padding]
+x = 5
+y = 5
+
+[cursor]
+style = { blinking = "Always", shape = "Block" }
+blink_timeout = 0
