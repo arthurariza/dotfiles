@@ -6,22 +6,27 @@ import = [
 size = 15.0
 
 [font.bold]
-family = "Menlo"
+family = "Hack Nerd Font"
 
 [font.italic]
-family = "Menlo"
+family = "Hack Nerd Font"
 
 [font.normal]
-family = "Menlo"
+family = "Hack Nerd Font"
 
 [font.offset]
 x = 0
 y = 0
 
 [window]
-decorations = "None"
+decorations = "Full"
 dynamic_padding = true
 resize_increments = true
+opacity = 0.9
+
+[window.dimensions]
+columns = 115
+lines = 40
 
 [window.padding]
 x = 5
