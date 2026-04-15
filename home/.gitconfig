@@ -1,0 +1,15 @@
+[user]                                                        
+    name = Arthur Ariza                                 
+    email = tucaariza@gmail.com                
+                                                                
+[includeIf "gitdir:/Users/arthur/Dev/Trainline/"]
+    path = ~/.gitconfig-work
+
+[push]
+	autoSetupRemote = true
+
+[pull]
+	rebase = false
+
+[init]
+    defaultBranch = main

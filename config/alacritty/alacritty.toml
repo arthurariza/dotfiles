@@ -1,18 +1,5 @@
-import = [
-  "~/.config/alacritty/catppuccin-macchiato.toml"
-]
-
 [font]
 size = 15.0
-
-[font.bold]
-family = "Hack Nerd Font"
-
-[font.italic]
-family = "Hack Nerd Font"
-
-[font.normal]
-family = "Hack Nerd Font"
 
 [font.offset]
 x = 0
@@ -22,7 +9,7 @@ y = 0
 decorations = "Full"
 dynamic_padding = true
 resize_increments = true
-opacity = 0.9
+opacity = 1.0
 
 [window.dimensions]
 columns = 115
@@ -35,3 +22,4 @@ y = 5
 [cursor]
 style = { blinking = "Always", shape = "Block" }
 blink_timeout = 0
+

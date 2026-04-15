@@ -1,0 +1,41 @@
+#!/bin/bash
+
+set -e
+
+echo "Install Dotfiles"
+echo ""
+echo "This will install/update your terminal setup"
+echo ""
+read -p "Continue? (y/n) " -n 1 -r
+echo ""
+
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo ""
+    echo "Cancelled"
+    echo ""
+    exit 0
+fi
+
+echo ""
+sudo -v
+
+# Symlinks
+echo ""
+echo "Creating symlinks"
+
+ln -sf ~/.dotfiles/home/.gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/home/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/home/.vimrc ~/.vimrc
+ln -sf ~/.dotfiles/home/Brewfile ~/Brewfile
+
+mkdir -p ~/Library/Application\ Support/Code/User
+ln -sf ~/.dotfiles/config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/.dotfiles/config/vscode/keymap.json ~/Library/Application\ Support/Code/User/keymap.json
+
+mkdir -p ~/.config/alacritty
+ln -sf ~/.dotfiles/config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+
+mkdir -p ~/.config/tmux
+ln -sf ~/.dotfiles/config/tmux/tmux.conf ~/.config/tmux/tmux.conf
+
+echo "Symlinks created"
