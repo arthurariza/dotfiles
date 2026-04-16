@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+set -e
+
+echo "Updating Brewfile..."
+brew bundle dump --file="$HOME/.dotfiles/home/Brewfile" -f
+echo "Brewfile updated!"
