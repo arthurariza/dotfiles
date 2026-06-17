@@ -16,14 +16,11 @@
   "emmet.triggerExpansionOnTab": true,
   "editor.linkedEditing": true,
   "window.newWindowProfile": "Default",
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features",
@@ -71,4 +68,13 @@
   },
   "rubocop.mode": "onlyRunGlobally",
   "editor.formatOnSave": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "ruby.specCommand": "bundle exec m",
+  "ruby.specPattern": "test",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
 }
